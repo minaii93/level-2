@@ -1,46 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-/* Kiszerveztem a közös tulajdonságokat egy .font-family osztályba */
-.font-family {
-  font-family: 'Poppins', sans-serif;
-}
-
-body {
+*{
   margin: 0;
-  font-family: 'Arial', sans-serif;
-}
-
-header {
-  background-color: #ffffff;
-  padding: 10px;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Poppins;
+  text-decoration: none;
 }
 
-/* Hozzáadtam a .font-family osztályt a .navigation részhez */
-.navigation {
+main {
+  width: 90%;
+  height: 900px;
+  margin: auto;
+  /* background-color: rgb(red, green, blue); */
+  background-color: rgb(220, 220, 220);
+
+.navbar{
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  padding: 20px;
+
 }
 
-/* Hozzáadtam a .font-family osztályt a header h3-hoz */
-header h3 {
-  font-size: 12pt;
-  padding-right: 260px;
-  display: block;
-  margin-block-start: 0;
-  margin-block-end: 0;
+.navbar h3{
+  font-size: 14pt;
 }
 
-nav ul {
-  list-style: none;
-  display: grid;
-  justify-content: flex-end;
-  grid-template-columns: repeat(4, 1fr) 0.4fr;
-  gap: 20px; /* Hozzáadtam egy rés a menüpontok közötti térhez */
+nav{
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+  justify-content: space-between;
+
 }
 
-/* Kiszerveztem a közös tulajdonságokat egy .shop-button osztályba */
-.shop-button {
+nav ul{
+  display: inline-block;
+  list-style-type: none;
+  text-align: center;
+  margin-left: 665px;
+}
+
+nav ul li{
+  display: inline-block;
+  margin: 10px 15px;
+  cursor: pointer;
+}
+
+
+
+p{
+  color: black;
+}
+
+.btn{
   background-color: #ffffff;
   color: #000000;
   padding: 5px 15px;
@@ -48,58 +61,3 @@ nav ul {
   border-radius: 15px;
   cursor: pointer;
 }
-
-/* Hozzáadtam a .font-family osztályt a main részhez */
-main {
-  width: 70%;
-  height: 700px;
-  margin: auto;
-  background-color: rgb(255, 255, 255);
-  font-family: Poppins;
-}
-
-/* Hozzáadtam a .font-family osztályt a .welcome-section részhez */
-.welcome-section {
-  font-size: 12px;
-  display: grid;
-  grid-template-columns: 1fr minmax(500px, 500px);
-  padding: 10px;
-  text-align: left;
-}
-
-.welcome-section h1 {
-  font-size: 35pt;
-  padding: 0;
-  margin-bottom: 12px;
-  margin-top: 12px;
-}
-
-.welcome-container {
-  max-width: auto;
-  margin: 0 auto;
-}
-
-.welcome-section h3 {
-  font-weight: normal;
-  font-size: 22pt;
-}
-
-.welcome-section p {
-  font-size: 10pt;
-}
-
-.welcome-section img {
-  width: 241px;
-  height: 140px;
-  /* Kiválasztottam a display: grid; és az object-fit: cover; részeket */
-  object-fit: contain; /* Megfelelő beállítás attól függően, hogy milyen eredményt szeretnél elérni */
-}
-
-/* Hozzáadtam a .circles részt a .color-circles osztályhoz, így a .circles osztályt könnyebben használhatod */
-.circles {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px; /* Hozzáadtam egy rés a körök közötti térhez */
-}
-
-/* Töröltem a nem használt .img-box osztályt */
