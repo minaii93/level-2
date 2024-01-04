@@ -14,6 +14,7 @@ main {
   margin: auto;
   /* background-color: rgb(red, green, blue); */
   background-color: rgb(220, 220, 220);
+}
 
 .navbar{
   display: flex;
@@ -54,8 +55,74 @@ p{
 .btn{
   background-color: #ffffff;
   color: #000000;
-  padding: 5px 15px;
+  padding: 3px 12px;
   border: solid 1px black;
   border-radius: 15px;
   cursor: pointer;
+  display: inline-block;
+  margin: auto;
 }
+
+.btn-w{
+  background-color: #000000;
+  color: #ffffff;
+  padding: 3px 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  display: inline-block;
+  margin: auto;
+
+}
+
+.btn-container{
+  display: grid;
+  
+}
+
+.btn-container .btn .btn-w{
+  grid-template-columns: 1fr 1fr;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  flex: wrap;
+  justify-content: space-around;
+}
+
+.col-2{
+
+  padding-left: 20px;
+  flex-basis: 50%;
+  
+
+}
+
+.col-2 img{
+  width: 100%;
+  
+  background-size: contain;
+  object-position: right top;
+  
+  
+}
+.col-2 h2{
+  font-family: Poppins;
+  font-size: 37px;
+  font-weight: normal;
+
+
+}
+
+.col-2 h1{
+  font-size: 60px;
+  line-height: 40px;
+  
+}
+
+.col-2 p{
+  font-size: 13pt;
+  padding-bottom: 30px;
+
+}
+
