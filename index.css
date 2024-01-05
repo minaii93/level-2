@@ -52,7 +52,6 @@ p{
 }
 
 .btn{
-  background-color: #ffffff;
   color: #000000;
   padding: 3px 12px;
   border: solid 1px black;
@@ -246,4 +245,51 @@ p{
   display: grid;
   font-size: 10pt;
   
+}
+
+footer{
+  background-image: linear-gradient(to right, rgb(179, 161, 240) ,rgb(30, 9, 121));
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+  height: 300px;
+}
+.footer_pic img{
+  width: 40%;
+  background-size: cover;
+  padding: 20px;
+  margin-left: 300px;
+  margin-top: 10px;
+}
+.footer_text{
+  padding: 20px;
+  list-style: none;
+  
+}
+
+.footer_text h3{
+  margin-left: 0px;
+  font-size: 12pt;
+}
+footer ul{
+
+  width: 350px;
+  padding: 10px;
+  list-style:square;
+}
+footer li {
+  margin: 15px;
+  color: whitesmoke;
+  font-size: 8pt;
+
+}
+
+footer .btn{
+  list-style: none;
+  margin-left: 15px;
+}
+.fin{
+  text-align: center;
+  font-size: 10px;
 }
