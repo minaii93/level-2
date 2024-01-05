@@ -74,10 +74,6 @@ p{
 
 }
 
-.btn-container{
-  display: grid;
-  
-}
 
 .btn-container .btn .btn-w{
   grid-template-columns: 1fr 1fr;
@@ -85,10 +81,11 @@ p{
 
 .row{
   display: flex;
-  align-items: center;
+  margin-top: 50px;
   flex: wrap;
   justify-content: space-around;
 }
+
 
 .col-2{
 
@@ -99,24 +96,28 @@ p{
 }
 
 .col-2 img{
-  width: 100%;
+  width: 80%;
+  transform: rotate(25deg);
   
   background-size: contain;
-  object-position: right top;
+  
+  
   
   
 }
 .col-2 h2{
   font-family: Poppins;
-  font-size: 37px;
+  font-size: 43px;
   font-weight: normal;
+  margin-bottom: 15px;
 
 
 }
 
 .col-2 h1{
   font-size: 60px;
-  line-height: 40px;
+  line-height: 52px;
+  margin-bottom: 20px;
   
 }
 
@@ -126,3 +127,33 @@ p{
 
 }
 
+.dot-container{
+  .container {
+    position:absolute;
+    width: 50%;
+    max-width: 100px;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.dot-red{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: red;
+}
+.dot-red{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: red;
+}
+
+.dot-red{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: red;
+}
