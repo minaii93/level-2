@@ -13,7 +13,7 @@ main {
   height: 900px;
   margin: auto;
   /* background-color: rgb(red, green, blue); */
-  background-color: rgb(220, 220, 220);
+  background-color: rgb(255, 255, 255);
 }
 
 .navbar{
@@ -75,15 +75,16 @@ p{
 }
 
 
-.btn-container .btn .btn-w{
-  grid-template-columns: 1fr 1fr;
-}
 
 .row{
   display: flex;
   margin-top: 50px;
   flex: wrap;
   justify-content: space-around;
+}
+
+.row p{
+  font-size: 10pt;
 }
 
 
@@ -128,32 +129,20 @@ p{
 }
 
 .dot-container{
-  .container {
-    position:absolute;
-    width: 50%;
-    max-width: 100px;
-    margin: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+  display: grid;
+  grid-template-columns: auto auto;
+  
+}
+.dot-container img{
+  width: auto;
+  height: 20px;
+  background-size: contain;
+  transform: rotate(0deg);
+  margin-top: 20px;
+  margin-bottom: 10px;
+ 
 }
 
-.dot-red{
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: red;
-}
-.dot-red{
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: red;
-}
-
-.dot-red{
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: red;
+.header{
+  
 }
